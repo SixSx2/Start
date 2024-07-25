@@ -17,3 +17,4 @@ document.getElementById("meuBotao").addEventListener("click", mostrarAviso);
 document.getElementById("meuBotao2").addEventListener("click", mostrarAviso);
 document.getElementById("meuBotao3").addEventListener("click", mostrarAviso);
 
+console.log("teste")
