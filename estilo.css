@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+
+nav button:hover {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+}
+
+/* Estilo da seção inicial */
+.inicio-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.conteudo {
+  display: none;
+}
+
+.conteudo.ativo {
+  display: block;
+}
+
+.imagem {
+  margin: 20px 0;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo dos botões de treino */
+.botao {
+  margin: 20px 0;
+}
+
+.botao button {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.botao button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Estilo dos títulos */
+h2 {
+  margin: 15px 0;
+  font-size: 1.8em;
+  color: #007BFF;
+}
+
+/* Estilo dos parágrafos */
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Estilo para listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Estilo das seções */
+section {
+  margin-bottom: 40px;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav button {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+}
