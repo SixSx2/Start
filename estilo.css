@@ -71,6 +71,8 @@ nav button:hover,
 /* Estilo dos conteúdos */
 .conteudo {
   display: none;
+  color: lightblue ;
+  text-align: center;
 }
 
 .conteudo.ativo {
@@ -110,4 +112,12 @@ ul {
 /* Estilo das seções */
 section {
   margin-bottom: 40px;
+}
+
+
+body {
+  background-image: url(https://www.fiberoficial.com.br/cdn/shop/articles/academia_musculacao.jpg?v=1687444110&width=2048);
+  background-repeat: no-repeat;
+  background-position: 10% 0; /* Move a imagem 10% para a direita */
+  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
 }

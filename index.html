@@ -12,25 +12,22 @@
         <nav>
             <ul>
                 <button onclick="mostrarConteudo('home')">Inicio</button>
-                <button onclick="mostrarConteudo('sobre')">Treinos</button>
+                <button id="treinos-btn" onclick="mostrarConteudo('sobre')">Treinos</button>
             </ul>
         </nav>
     </div>
 </header>
+
 <body>
+
     <div class="botao">
-    <section id="inicio" class="inicio-section">
-        <div id="home" class="conteudo ativo">
-            <h1>Bem-vindo ao Inicio</h1>
-            <p>Este é o conteúdo da página inicial.</p>
-        </div>
 
         <div id="sobre" class="conteudo">
             <h1>Treinos</h1>
-            <button onclick="mostrarConteudo('Biceps')">Biceps</button>
-            <button onclick="mostrarConteudo('Triceps')">Triceps</button>
-            <button onclick="mostrarConteudo('Peito')">Peito</button>
-            <button onclick="mostrarConteudo('Costas')">Costas</button>
+            <button  onclick="mostrarConteudo('Biceps')">Biceps</button>
+            <button  onclick="mostrarConteudo('Triceps')">Triceps</button>
+            <button  onclick="mostrarConteudo('Peito')">Peito</button>
+            <button  onclick="mostrarConteudo('Costas')">Costas</button>
             <button id="meuBotao">Antebraço</button> <!--quando a função estiver pronta tirar o id e colocar onclick="mostrarconteudo"()-->
             <button id="meuBotao2">Ombros</button>
             <button onclick="mostrarConteudo('Pernas')">Pernas</button>
@@ -232,7 +229,6 @@
                 </p>
             </div>
         </div>
-    </section>
     </div>
     <script src="java.js"></script>
 </body>
