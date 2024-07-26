@@ -80,7 +80,7 @@ nav button:hover,
 .card {
   border: 2px solid red; /* Borda vermelha */
   padding: 10px; /* Espaçamento interno */
-  border-radius: 8px; /* Cantos arredondados (opcional) */
+  border-radius: 30px; /* Cantos arredondados (opcional) */
   text-align: center; /* Centraliza o texto dentro da card */
   background-color: rgba(104, 101, 101, 0.815);
 }
