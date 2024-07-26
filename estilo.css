@@ -89,6 +89,13 @@ nav button:hover,
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+.imagem h2{
+  color: rgb(0, 0, 0);
+
+}
+.imagem p {
+  color: rgb(0,0,0);
+}
 
 /* Estilo dos títulos */
 h2 {
