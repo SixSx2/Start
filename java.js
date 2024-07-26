@@ -1,39 +1,30 @@
 function mostrarConteudo(id) {
+    // Obter todos os conteúdos com a classe 'conteudo'
     const conteudos = document.querySelectorAll('.conteudo');
-    
-    // Esconder todos os conteúdos
+
+    // Esconder todos os conteúdos (incluindo cards)
     conteudos.forEach(conteudo => {
-        conteudo.classList.remove('ativo');
+        conteudo.style.display = 'none'; // Esconde todos os conteúdos
     });
 
-    // Mostrar o conteúdo selecionado
-    if (id === 'home') {
-        document.body.style.backgroundImage = ''; // Restaura a imagem de fundo
+    // Se o botão "Treinos" for clicado
+    if (id === 'treinos') {
+        // Esconder o fundo e o card
+        document.body.style.backgroundImage = 'none'; // Remove a imagem de fundo
+        document.querySelector('.card-container').style.display = 'none'; // Esconde o card
+        // Mostrar os botões de treino
+        document.getElementById('treinos-buttons').style.display = 'block';
+    } else if (id === 'home') {
+        // Mostrar o fundo e o card
+        document.body.style.backgroundImage = 'url(https://www.selfitacademias.com.br/images/bg-planos-new.jpg)'; // Restaura a imagem de fundo
+        document.querySelector('.card-container').style.display = 'flex'; // Mostra o card
     } else {
+        // Mostrar o conteúdo específico (ex: Biceps, Triceps, etc.)
         const conteudoAtivo = document.getElementById(id);
         if (conteudoAtivo) {
-            conteudoAtivo.classList.add('ativo');
-            // Remover fundo ao clicar nos botões de treino
-            if (['Biceps', 'Triceps', 'Peito', 'Costas', 'Pernas'].includes(id)) {
-                document.body.style.backgroundImage = 'none'; // Remove o fundo
-            } else {
-                document.body.style.backgroundImage = ''; // Restaura o fundo se necessário
-            }
+            conteudoAtivo.style.display = 'block'; // Mostra o conteúdo ativo
+            // Restaura a rolagem do body
+            document.body.style.overflow = 'auto'; // Permite a rolagem
         }
     }
 }
-
-// Função que exibe um aviso
-function mostrarAviso() {
-    alert("Este treino ainda não está disponível! Tente novamente na próxima atualização");
-}
-
-// Adiciona um evento de clique ao botão
-document.getElementById("meuBotao").addEventListener("click", mostrarAviso);
-document.getElementById("meuBotao2").addEventListener("click", mostrarAviso);
-document.getElementById("meuBotao3").addEventListener("click", mostrarAviso);
-
-// Adiciona evento ao botão "Inicio"
-document.getElementById("inicio-btn").addEventListener("click", () => {
-    mostrarConteudo('home'); // Chama a função para mostrar apenas a imagem de fundo
-});
