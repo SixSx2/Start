@@ -6,14 +6,16 @@
 }
 
 body {
-    background-image: url(https://www.selfitacademias.com.br/images/bg-planos-new.jpg);
-    background-repeat: no-repeat;
-    background-position: center center; /* Centraliza a imagem tanto vertical quanto horizontalmente */
-    background-size: cover; /* Faz a imagem cobrir todo o fundo da tela */
-    margin: 0; /* Remove a margem padrão do body para garantir que a imagem cubra toda a tela */
-    width: 100vw; /* Garante que o body tenha largura total da viewport */
-    height: auto; /* Altera para auto para permitir rolagem */
+  background-image: url(videos/posando-atletas-segurando-pesos.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; /* Adiciona efeito de paralaxe */
+  margin: 0;
+  width: 100vw;
+  height: 100vh; /* Altera para 100vh para cobrir toda a altura da viewport */
 }
+
 
 /* Estilo do cabeçalho */
 header {
@@ -80,6 +82,7 @@ nav button:hover,
   padding: 10px; /* Espaçamento interno */
   border-radius: 8px; /* Cantos arredondados (opcional) */
   text-align: center; /* Centraliza o texto dentro da card */
+  background-color: rgba(104, 101, 101, 0.486);
 }
 
 /* O restante do seu CSS permanece o mesmo... */

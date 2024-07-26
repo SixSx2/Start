@@ -16,7 +16,7 @@ function mostrarConteudo(id) {
         document.getElementById('treinos-buttons').style.display = 'block';
     } else if (id === 'home') {
         // Mostrar o fundo e o card
-        document.body.style.backgroundImage = 'url(https://www.selfitacademias.com.br/images/bg-planos-new.jpg)'; // Restaura a imagem de fundo
+        document.body.style.backgroundImage = 'url(videos/posando-atletas-segurando-pesos.jpg)'; // Restaura a imagem de fundo
         document.querySelector('.card-container').style.display = 'flex'; // Mostra o card
     } else {
         // Mostrar o conteúdo específico (ex: Biceps, Triceps, etc.)
