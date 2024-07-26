@@ -13,7 +13,7 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-  background-color: #007bff; /* Cor de fundo vibrante para o cabeçalho */
+  background-color: #007bff00; /* Cor de fundo vibrante para o cabeçalho */
   color: white;
   padding: 20px 0;
 }
@@ -26,7 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 h1 {
   font-size: 2.5em;
 }
