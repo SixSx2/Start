@@ -26,6 +26,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.container h1 {
+  color: #000;
+}
 h1 {
   font-size: 2.5em;
 }
@@ -121,9 +124,16 @@ section {
 }
 
 
+/* Estilo geral para todos os dispositivos */
 body {
-  background-image: url(https://www.fiberoficial.com.br/cdn/shop/articles/academia_musculacao.jpg?v=1687444110&width=2048);
+  background-image: url(https://barcelonasuperficies.com.br/wp-content/uploads/2018/08/guia-definitivo-para-montar-uma-academia-de-sucesso-740x495.jpg);
   background-repeat: no-repeat;
-  background-position: 10% 0; /* Move a imagem 10% para a direita */
-  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+  background-position: center center; /* Centraliza a imagem tanto vertical quanto horizontalmente */
+  background-size: cover; /* Faz a imagem cobrir todo o fundo da tela */
+  margin: 0; /* Remove a margem padrão do body para garantir que a imagem cubra toda a tela */
+  height: 100vh; /* Garante que o body tenha altura total da viewport */
+  width: 100vw; /* Garante que o body tenha largura total da viewport */
+  overflow: hidden; /* Evita barras de rolagem desnecessárias */
 }
+
+/* Consultas de mídia podem não ser necessárias se a configuração acima for suficiente para suas necessidades */
